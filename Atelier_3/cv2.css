@@ -22,7 +22,8 @@ body{
     border-radius: 2px;
 } 
 .left div{
-    height: 250px;
+    min-height: 250px;
+    max-height: auto;
 }
 /* .right div{
     border:0.5px solid rgb(226, 150, 163);
@@ -35,9 +36,14 @@ body{
     /* height: 40px; */
     width: 100%;
     text-align: center;
+    font-size:22px;
 }
-h2,p{
-    margin-top: 5px;
+h2{
+    text-decoration: underline;
+    color: rgb(53, 50, 50);
+}
+h2,p,h2{
+    margin-top: 10px;
     margin-left: 16px;
 }
 .right{
