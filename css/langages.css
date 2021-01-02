@@ -8,7 +8,7 @@
     margin-bottom: 20px;
 }
 .english_l,.french_l{
-    background-color: #BEDCFE;
+    /* background-color: #BEDCFE; */
     padding:5%;
     border-radius: 3px;
     opacity: 0.6;
@@ -40,7 +40,7 @@
     margin-top: 8.5%;
     border: 1px solid #2F242C;
     border-radius: 4px;
-    background-color: rgb(70, 14, 70);
+    background-color: #552139;
     color: white;
     font-size: 100%;
 
