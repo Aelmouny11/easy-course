@@ -115,7 +115,7 @@ header{
       background-color:#553041 ;
   }
   #nav_links a{
-    color: #745965;
+    color: #553041;
     /* height: 20px; */
   }
   /* #nav_links a:hover{
@@ -125,10 +125,14 @@ header{
   #nav_links a:active{
     background: grey;
   }
+  #nav_links a:hover{
+    color: white;
+    background:#553041;
+  }
   /* Dropdown Button */
 .dropbtn {
     background-color:white;
-    color: #745965;
+    color: #3a222d;
     padding: 16px;
     font-size: 16px;
     border: none;
