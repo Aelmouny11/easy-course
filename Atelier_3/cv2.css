@@ -17,9 +17,10 @@ body{
 .left div,.right div{
     border:0.5px solid rgb(226, 150, 163);
     /* height: 200px; */
-    margin-top: 10px;
+    margin-top: 25px;
     /* text-align: center; */
     border-radius: 2px;
+    box-shadow: 10px 15px 15px 0 rgba(164, 89, 179, 0.37);
 } 
 .left div{
     min-height: 250px;
@@ -65,8 +66,16 @@ h2,p,h2{
     border-radius: 50%;
     margin-left: 35%;
 }
-span{
+.logo span{
     /* justify-content:start; */
     margin-left:30%;
     color: white;
+}
+h1 span{
+    
+    /* box-shadow: 1px 1px 1px 0 grey; */
+
+}
+a:visited{
+    color:magenta;
 }
