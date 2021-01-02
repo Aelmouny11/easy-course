@@ -104,14 +104,17 @@ header{
       font-size: 16px;
 
   }
+  #nav_links:focus{
+      background-color:#A27E8E ;
+  }
   #nav_links a{
     color: #745965;
     /* height: 20px; */
   }
-  #nav_links a:hover{
+  /* #nav_links a:hover{
     color: white;
     background: #A27E8E;
-   }
+   } */
   #nav_links a:active{
     background: grey;
   }
@@ -136,6 +139,7 @@ header{
     height:600px;
     padding-top: 60px;
     background: url(../src/slide1.jpg);
+    background-repeat: no-repeat;
     /* opacity: 0.7; */
     background-size: 100%;
     border-radius:6px;}
