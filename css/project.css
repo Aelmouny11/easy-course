@@ -10,11 +10,12 @@ header{
     margin-right: 2%;
     border-bottom: 1px solid #553041 ;
     /* border-: 12px; */
-    margin-bottom: 5%;
+    /* margin-bottom: 10%; */
     top:0;
-    position: fixed;
-    z-index:1000;
+    position: sticky;
+    z-index:10000;
     width: 96%;
+    /* bottom: 100%; */
 }
 
 #logo{
@@ -186,6 +187,12 @@ header{
     border:1px groove grey;
     border-radius: 12%;
 }
+main{
+    top:100px;
+}
+header + main {
+    padding-top: 102px;
+  }
 .contenu_principal{
     margin: 2%;
     height:600px;
@@ -196,6 +203,7 @@ header{
     background-size: 100%;
     border-radius:6px;
     /* position: relative; */
+    /* margin-top: 5%; */
 }
 .slides p{
     /* padding: 60px 60px 0 100px; */
