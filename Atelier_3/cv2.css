@@ -6,6 +6,9 @@ body{
     padding: 2%;
     display: flex;
     justify-content: center;
+    background:url(nick-fewings-PfeytPoRX8w-unsplash.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
 }
 .left{
     /* background-color: turquoise; */
@@ -21,6 +24,7 @@ body{
     /* text-align: center; */
     border-radius: 2px;
     box-shadow: 10px 15px 15px 0 rgba(164, 89, 179, 0.37);
+    background:white;
 } 
 .left div{
     min-height: 250px;
@@ -56,7 +60,7 @@ h2,p,h2{
     float: right;
 }
 .logo{
-    background-color: rgb(226, 150, 163);
+    background-color: rgb(226, 150, 163)cp;
     padding: 30px;
     /* height: 500px; */
 }
@@ -78,4 +82,7 @@ h1 span{
 }
 a:visited{
     color:magenta;
+}
+.right div p{
+    margin:20px;
 }
