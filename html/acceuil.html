@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/project.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../js/main.js"></script>
+    <script src="../js/validate.js"></script>
 </head>
 <body style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
     <header id="myHeader">
@@ -45,7 +46,7 @@
                 <button style="font-size:18px;" id="search-btn">
                     <i class="fa fa-search"></i>
                 </button>
-                <input type="button" value="Login" id="login-btn">
+                <button type="button"  id="login-btn" onclick="document.getElementById('id01').style.display='block'">login</button>
             </li>
         </ul>
         <div id="mySidebar" class="sidebar">
@@ -55,6 +56,46 @@
             <a href="#">Soutien</a>
             <a href="#">College</a>
           </div>
+          <div id="id01" class="modal">
+  
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="../src/img_avatar2.png" alt="Avatar" class="avatar">
+              </div>
+          
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" id="loginInput" required><br>
+                <span id="uname_mess"></span><br>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="loginInput"required>
+                  
+                <button type="submit" id="Lginbutton">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form>
+          </div>
+          
+          <script>
+          // Get the modal
+          var modal = document.getElementById('id01');
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+          </script>
     </header>
     <main class="contenu_principal" id="sticky">
         <div class="slides">
