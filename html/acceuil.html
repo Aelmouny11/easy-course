@@ -124,8 +124,9 @@
     <footer>
         <div class="footer_newsletter">
             <h1 style="color: white;font-weight: bold;">S'INSCRIRE À LA NEWSLETTER</h1>
-            <input type="email" placeholder="Email">
-            <button type="button" href="#" style="font-size:18px;">SUBMIT</button>
+            <input type="email" placeholder="Email" id="footer_email" oninput="validateEmail('footer_email', 'ft_email_mess')" >
+            <button type="button" href="#" style="font-size:18px;"  >SUBMIT</button><br><br>
+            <span id="ft_email_mess" style="color:#8b9974;"></span>
         </div>
         <div class="footer_links">
             <img src="../src/Copy of Easy5.png" id="logof">

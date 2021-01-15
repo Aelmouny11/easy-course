@@ -1,10 +1,10 @@
- monfirefox = navigator.userAgent.indexOf('Firefox');
+monfirefox = navigator.userAgent.indexOf('Firefox');
 // Car les popup in firefox sont ennuyantes
 function requiredElement(myid, spanid) {
     x = document.getElementById(myid);
     if (x.value == "") {
         x.style.background = 'red';
-        if(monfirefox!=-1){
+        if (monfirefox != -1) {
             document.getElementById(spanid).innerHTML = x.name + " ne doit pas etre vide";
             return false;
         }
@@ -32,10 +32,10 @@ function note1Validate(inputID, spanid) {
     y = document.getElementById(inputID);
     if (isNaN(y.value) || y.value == "" || y.value < 0 || y.value > 20) {
         y.style.background = 'red';
-        if(monfirefox!=-1){
-        document.getElementById(spanid).innerHTML = "La note " + y.name + " doit etre entre 0 et 20";
+        if (monfirefox != -1) {
+            document.getElementById(spanid).innerHTML = "La note " + y.name + " doit etre entre 0 et 20";
         }
-        else{
+        else {
             alert("La note " + y.name + " doit etre entre 0 et 20");
         }
         if (y.value == '') {
@@ -87,16 +87,14 @@ function validateEmail(email, spanid) {
     x = document.getElementById(email);
     var re = /\S+@\S+\.\S+/;
     if (!re.test(x.value) && x.value != '') {
-        x.style.background = 'red';
-        if(monfirefox==-1){
+        // x.style.border = '1px solid red';
         document.getElementById(spanid).innerHTML = "Cet email est invalide";
-        return false;}
-        alert("Cet email est invalide");
         return false;
     }
     else {
         document.getElementById(spanid).innerHTML = "";
-        x.style.background = 'none';
+        x.style.border = 'none';
+        // x.style.background = 'wh';
         return true;
     }
 
@@ -106,10 +104,10 @@ function validateName(myid, spanid) {
     var re = /^[a-zA-Z]+$/;
     x = document.getElementById(myid);
     if (!re.test(x.value) && x.value != "" && requiredElement(myid, spanid)) {
-        if(monfirefox!=-1){
-        document.getElementById(spanid).innerHTML = "Le " + myid.name + " ne doit pas etre vide ou contenir des nombres";
+        if (monfirefox != -1) {
+            document.getElementById(spanid).innerHTML = "Le " + myid.name + " ne doit pas etre vide ou contenir des nombres";
         }
-        else{
+        else {
             alert("Le " + myid.name + " ne doit pas etre vide ou contenir des nombres");
         }
         x.style.background = 'red';
