@@ -3,18 +3,13 @@ monfirefox = navigator.userAgent.indexOf('Firefox');
 function requiredElement(myid, spanid) {
     x = document.getElementById(myid);
     if (x.value == "") {
-        x.style.background = 'red';
-        if (monfirefox != -1) {
+        x.style.border = '0.5px solid red';
             document.getElementById(spanid).innerHTML = x.name + " ne doit pas etre vide";
             return false;
-        }
-        alert(x.name + " ne doit pas etre vide");
-        return false;
-
     }
     else {
-        document.getElementById(spanid).innerHTML = "";
-        x.style.background = 'none';
+        document.getElementById(spanid).innerHTML = " ";
+        x.style.border = 'none';
         return true;
     }
     return true;
@@ -104,22 +99,18 @@ function validateName(myid, spanid) {
     var re = /^[a-zA-Z]+$/;
     x = document.getElementById(myid);
     if (!re.test(x.value) && x.value != "" && requiredElement(myid, spanid)) {
-        if (monfirefox != -1) {
-            document.getElementById(spanid).innerHTML = "Le " + myid.name + " ne doit pas etre vide ou contenir des nombres";
-        }
-        else {
-            alert("Le " + myid.name + " ne doit pas etre vide ou contenir des nombres");
-        }
-        x.style.background = 'red';
+        document.getElementById(spanid).innerHTML = "Le " + myid.name + " ne doit pas etre vide ou contenir des nombres";
+        x.style.border = '0.5px solid red';
         return false;
 
     }
     else {
-        document.getElementById(spanid).innerHTML = "";
+        document.getElementById(spanid).innerHTML ='';
         x.style.background = 'none';
         return true;
 
     }
+    return true;
 
 }
 function validateForm() {

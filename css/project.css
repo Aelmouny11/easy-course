@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+button:hover{
+    opacity: 0.8;
+}
 #sidemenu{
     border:none;
     background:none;
@@ -93,12 +96,25 @@ header{
       background-color: #553041;
       height:31px;
       width:80px;
-      font-size: 18px;
+      font-size: 90%;
       border:none;
       border-radius: 3px;
       border-color:#553041 ;
       text-align: center;
       color: white;
+      margin-left:10px;
+      padding:2%;
+  }#sign-btn{
+      background-color: #553041;
+      height:31px;
+      width:100px;
+      font-size: 90%;
+      border:none;
+      border-radius: 3px;
+      border-color:#553041 ;
+      text-align: center;
+      color: white;
+      padding:2%;
   }
   .monnavbar li a {
     display: block;
@@ -133,18 +149,23 @@ header{
   }
   /* Dropdown Button */
 .dropbtn {
-    background-color:white;
-    color: #3a222d;
+    background-color:#553041;
+    color:white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 22px;
     border: none;
-    border-radius: 3px;
+    /* border-radius: 3px; */
+    width: 100%;
+    text-align: start;
+    padding-left:30px;
+
   }
   
   /* The container <div> - needed to position the dropdown content */
   .dropdown {
     position: relative;
     display: inline-block;
+    width:100%;
   }
   
   /* Dropdown Content (Hidden by Default) */
@@ -154,7 +175,7 @@ header{
     /* float: left; */
     position: relative;
     /* height: 200px; */
-    background-color: white;
+    background-color: grey;
     min-width: 160px;
     /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
     z-index: 0;
@@ -482,7 +503,7 @@ input{
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   } 
-  #loginInput{
+  #loginInput,#id02 input{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -492,7 +513,7 @@ input{
   }
   
   /* Set a style for all buttons */
-  #Lginbutton,.cancelbtn {
+  #Lginbutton,.cancelbtn,#signupbutton {
     background-color: #553041;
     color: white;
     padding: 14px 20px;
