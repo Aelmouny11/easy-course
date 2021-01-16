@@ -94,7 +94,7 @@ header{
   }
   #login-btn{
       background-color: #553041;
-      height:31px;
+      height:33px;
       width:80px;
       font-size: 90%;
       border:none;
@@ -106,7 +106,7 @@ header{
       padding:2%;
   }#sign-btn{
       background-color: #553041;
-      height:31px;
+      height:33px;
       width:100px;
       font-size: 90%;
       border:none;
@@ -438,7 +438,7 @@ input{
   }
  /* The sidebar menu */
  .sidebar {
-    height: 50%; /* 100% Full-height */
+    height: 350px; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
@@ -632,6 +632,7 @@ input{
     }
     .cancelbtn {
        width: 100%;
+       border:4px;
     }
   }
   #uname_mess{

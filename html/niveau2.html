@@ -7,6 +7,7 @@
     <title>Acceuil</title>
     <link rel="stylesheet" href="../css/project.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/niveau.css">
     <script src="../js/main.js"></script>
     <script src="../js/validate.js"></script>
 </head>
@@ -129,6 +130,7 @@
           
           // When the user clicks anywhere outside of the modal, close it
           window.onclick = function(event) {
+              body.style.background='rgba(0,0,0,0.4)';
               if (event.target == modal) {
                   modal.style.display = "none";
               }
@@ -147,29 +149,33 @@
           }
           </script>
     </header>
-    <main class="contenu_principal" id="sticky">
-        <div class="slides">
-            <center>
-                <h1 style="color: black;padding-top:50px;">
-                    <span style="color :black;">E</span>asy
-                    <span style="color:black;">C</span>ourse
-
-                </h1>
-            </center>
-            <p style="padding: 0px;">
-            <H2 style="margin-top: 20px;padding-left: 25px;"> Avoir votre Cours toujours pres de vous </H2>
-            <center>
-                <p style="padding-top: 12px;">
-                <h3 style="color: black;margin-top: 20px;">Cours, Exercices, </h3>
-                <h3 style="color: black;">Examen, Document </h3>
-                </p>
-            </center>
-            </p>
-            <button type="button"><i class="fa fa-search" style="margin-right: 10px;"></i>Trouver un cours</button>
+    <main class="niveau" id="sticky">
+        <div class="matieres">
+            <div id="module">
+                <a href="#"><img src="../src/module1.jpg" id="modulejpg"></a>
+                <h4 id="moduletitle">Francais</h4>
+                <button id="module-btn">Acceder</button>
+                
+            </div>
+            <div id="module">
+                <a href="#"><img src="../src/module1.jpg" id="modulejpg"></a>
+                <h4 id="moduletitle">Francais</h4>
+                <button id="module-btn">Acceder</button>
+                
+            </div>
+            <div id="module">
+                <a href="#"><img src="../src/module1.jpg" id="modulejpg"></a>
+                <h4 id="moduletitle">Francais</h4>
+                <button id="module-btn">Acceder</button>
+                
+            </div>
+            <div id="module">
+                <a href="#"><img src="../src/module1.jpg" id="modulejpg"></a>
+                <h4 id="moduletitle">Francais</h4>
+                <button id="module-btn">Acceder</button>
+                
+            </div>
         </div>
-
-
-
     </main>
     <footer>
         <div class="footer_newsletter">
